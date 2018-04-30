@@ -1,0 +1,33 @@
+body {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+img {
+    width: 400px;
+
+}
+#first {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 30px;
+}
+#second{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+#third{
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
+}
+
+#backtotop {
+    width: 120px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}

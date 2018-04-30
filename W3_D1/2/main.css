@@ -1,0 +1,59 @@
+body {
+    position: relative;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color:yellow;
+}
+
+.third {
+    background-color:blue;
+}
+
+#first2 {
+    position: relative;
+}
+
+#second2 {
+    position: relative;
+    left: 100px;
+    top: -100px;
+}
+
+#third2 {
+    position: relative;
+    left: 200px;
+    top: -200px;
+}
+
+#first3 {
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    bottom: -200;
+
+}
+
+#second3 {
+    position: absolute;
+    right: 100px;
+    bottom: -300px;
+    z-index: 2;
+
+}
+
+#third3 {
+    position: absolute;
+    right: 200px;
+    bottom:  -400px;
+    z-index: 1;
+}

@@ -1,0 +1,45 @@
+div {
+    width: 960px;
+    background-color: darkred;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+li  {
+
+   display: inline-block;  
+   float: right;
+   padding-right: 15px;
+   padding-bottom: 20px;
+}
+
+hr {
+    clear: right;
+}
+
+a:link {
+    color: white;
+    text-decoration: solid;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    font-size: 25px;
+    color: yellow;
+}
+
+img {
+    width: 100%;
+}
+
+#pravo {
+    width: 300px;
+    
+
+}
