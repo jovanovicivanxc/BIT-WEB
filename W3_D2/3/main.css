@@ -1,0 +1,17 @@
+.img {
+    display: block;
+}
+#img1 {
+    height: 200px;
+    float: right;
+}
+#img2 {
+    width: 200px;
+    margin: auto;
+    clear: right;
+}
+#img3 {
+    width: 200px;
+    height: 200px;
+    clear: left;
+}

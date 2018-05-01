@@ -1,0 +1,9 @@
+body {
+    font-size: 24px;
+    background-image: url(https://cambridgeholidaycottages.com/wp-content/uploads/2014/08/Wood-Background-Repeat.jpg);
+    background-repeat: no-repeat;
+    /* background-position: right center; */
+    /* background-attachment: fixed; */
+    background-size: cover;
+
+}
