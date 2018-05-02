@@ -1,0 +1,26 @@
+header {
+    width: 90%;
+    margin: auto;
+}
+
+img {
+    width: 70px;
+    float: left;
+}
+
+div {
+    width: 90%;
+    margin: auto;
+}
+
+aside {
+    width: 40%;
+    box-sizing: border-box;
+    float: left;
+}
+
+main {
+    width: 60%;
+    box-sizing: border-box;
+    float: left;
+}
