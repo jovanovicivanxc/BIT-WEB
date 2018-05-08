@@ -1,0 +1,225 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+
+header {
+    background-image: url(./images/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    /* text-align: center; */
+}
+
+ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+    /* padding: 20px; */
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: auto;
+}
+
+#readmore {
+    width: 30%;
+    line-height: 40px;
+    background-color: steelblue;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+}
+
+#build {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    color: orange;
+    /* width: 100px; */
+    font-size: 30px;
+    margin: auto;
+    font-weight: bold;
+}
+
+#estate {
+    /* width: 100px; */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#buildestate {
+    text-align: center;
+    margin: 20px;
+
+}
+
+nav {
+    margin: 20px auto;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+main>div {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    color:steelblue;
+    margin-left: 50px;
+}
+
+ul#image-marker {
+    list-style-image: url(./images/arrow_bullet.png);
+    margin-left: 50px;
+    
+}
+
+article {
+    position: relative;
+}
+
+article>img {
+    width: 95%;
+    left: 2.5%;
+    margin: 10px auto;
+    position: relative;
+}
+
+#peopleheading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.comment {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(139, 190, 231);
+    margin: auto;
+}
+
+.peopleimg {
+    height: 80px;
+    border: 2px solid white;   
+    border-radius: 50%;
+    padding:5px;
+    margin: 30px 30px 5px 20px;
+    display: inline-block;
+    float:left;
+}
+
+.name {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.stars {
+    display: inline-block;
+    color: white;
+    vertical-align: top;
+    margin-top: 80px;
+    float:left;
+    padding-left: 10px;
+
+}
+
+.peopletext {
+    color: white;
+    margin: 10px;
+}
+
+#contactus {
+    background-color: springgreen;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.icon {
+    width: 18px;
+}
+
+#connectus {
+    background-color: rgb(231, 36, 101);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+#address {
+    background-color: rgb(36, 127, 231);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+div.house {
+    background-color: rgb(128, 153, 182);
+    width: 100%;
+    text-align: center;
+}
+
+#house1 {
+    width: 350px;
+    height:200px;
+
+}
+
+@media (min-width: 768px) {
+
+header {
+    height: 450px;
+
+}
+nav {
+    position: absolute;
+    top:0px;
+    right: 15px;
+    background-color: rgba(1,1,1, 0.0)
+}
+
+li {
+    display: inline-block;
+}
+
+
+#buildestate {
+    position: absolute;
+    top: 10px;
+}
+
+h1 {
+    top: 40%;
+
+}
+
+
+
+}

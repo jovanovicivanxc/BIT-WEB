@@ -1,0 +1,10 @@
+
+@mixin text-shadow {
+    text-shadow: 4px -3px 2px rgba(150, 150, 150, 1);
+}
+
+@mixin box-shadow ($alpha) {
+-webkit-box-shadow: 10px 10px 93px 0px rgba(0,0,0,$alpha);
+-moz-box-shadow: 10px 10px 93px 0px rgba(0,0,0,$alpha);
+box-shadow: 10px 10px 93px 0px rgba(0,0,0,$alpha);
+}
