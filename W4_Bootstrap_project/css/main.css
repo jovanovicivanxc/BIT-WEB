@@ -6,7 +6,6 @@ body {
   color: white; }
 
 #greenish {
-  background-color: #18bc9c;
   color: white; }
 
 #profile {
@@ -18,10 +17,9 @@ body {
   padding-bottom: 20px; }
 
 #third_div {
-  background-color: #18bc9c;
   color: white; }
 
-button {
+button, #greenish, #third_div, .btn, .navbar-dark .navbar-toggler, .btn-success {
   background-color: #18bc9c; }
 
 #forth_div {
@@ -41,10 +39,10 @@ button {
   width: 5; }
 
 .navbar-dark .navbar-toggler {
-  color: white;
-  background-color: #18bc9c; }
+  color: white; }
 
-.btn-success {
-  background-color: #18bc9c; }
+body {
+  background-image: url(./img/to-top.png);
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=main.css.map */

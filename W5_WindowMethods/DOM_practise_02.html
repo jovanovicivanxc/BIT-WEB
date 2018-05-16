@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>mon</li>
+            <li>tue</li>
+            <li>wed</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <ul>
+            <li>jan</li>
+            <li class='active'>feb</li>
+            <li>mar</li>
+        </ul>
+
+    </div>
+    <script>
+        var elem = document.querySelector(".active");
+        elem.classList.remove('active');
+        elem.parentElement.parentElement.previousElementSibling.firstChild.firstElementChild.firstElementChild;
+
+    </script>
+
+</body>
+
+</html>

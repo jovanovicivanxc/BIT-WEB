@@ -9,7 +9,7 @@ body {
 }
 
 #greenish {
-    background-color: #18bc9c;
+    @extend button;
     color: white;
 }
 
@@ -24,12 +24,16 @@ body {
 }
 
 #third_div {
-    background-color:  #18bc9c;
+    @extend button;
     color: white;
 }
 
 button {
     background-color: #18bc9c;
+}
+
+.btn {
+    @extend button;
 }
 
 #forth_div {
@@ -52,11 +56,19 @@ button {
     width: 5
 }
 
-.navbar-dark .navbar-toggler {
-    color: white;
-    background-color:  #18bc9c;
+.navbar-dark 
+    {   .navbar-toggler {
+        
+        color: white;
+        @extend button;
 }
+    }
 
 .btn-success {
-    background-color: #18bc9c;
+    @extend button;
+}
+
+body {
+    background-image: url(./img/to-top.png);
+    background-attachment: fixed;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+    <style>
+        .second {
+            background-color: blue;
+        }
+
+        .bg-color {
+            background-color: cyan;
+        }
+
+        .third {
+            background-color: coral;
+            text-transform: uppercase
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul id="sec">
+        <li>Ponedeljak</li>
+        <li>Utorak</li>
+        <li>Sreda</li>
+    </ul>
+
+    <ul>
+        <li>Januar</li>
+        <li>Februar</li>
+        <li>Mart</li>
+        <li>April</li>
+    </ul>
+    <script>
+        document.getElementById("sec").className = "second";
+
+        var list1 = document.getElementsByTagName('li')
+        for (i = 0; i < list1.length; i++) {
+            list1[i].className = "bg-color";
+        }
+
+        var list3 = document.querySelectorAll('ul:nth-of-type(3)');
+        for (i = 0; i < list3.length; i++) {
+            list3[i].className = "third";
+        }
+
+    </script>
+</body>
+
+</html>

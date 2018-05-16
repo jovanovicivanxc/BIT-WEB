@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="input1">Korisnicko ime:</label>
+        <input class="check1" id="input1" type="text" required="required">
+        <br>
+        <br>
+        <label for="input2">E-mail adresa:</label>
+        <input class="check2" id="input2" type="email" required="required">
+        <br>
+        <br>
+        <button onclick="f()">Submit</button>
+    </form>
+
+    <script>
+        function f() {
+
+            if (document.querySelector(".check1").hasAttribute("required") && document.querySelector(".check1").textContent == "") {
+                document.querySelector(".check1").classList.add("red");
+            }
+            if (document.querySelector(".check2").hasAttribute("required") && document.querySelector(".check2").textContent == "") {
+                document.querySelector(".check2").classList.add("red");
+            }
+
+        };
+
+
+
+    </script>
+</body>
+
+</html>
