@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="area">
+
+    </div>
+
+    <div id="input">
+        <input type="text" name="text" id="myText">
+    </div>
+
+    <div id="button">
+        <button id="button1">Send</button>
+    </div>
+
+
+    <script>
+        // 
+
+        function click() {
+            var text = document.querySelector("#myText");
+            x = text.value;
+            var para = document.createElement("P");
+            var t = document.createTextNode(x);
+            para.appendChild(t);
+            document.querySelector("#area").appendChild(para);
+
+            text.value = "";
+
+            // document.createElement("div");
+            // document.querySelector("#demo").innerHTML += x;
+
+        };
+
+        myText.onkeyup = function (event) {
+            if (event.keyCode === 13) {
+                click();
+            }
+        }
+
+        button1.onclick = function (event) {
+            click();
+        }
+
+
+    </script>
+</body>
+
+</html>

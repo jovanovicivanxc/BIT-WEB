@@ -1,0 +1,30 @@
+div {
+   margin: auto; 
+   text-align: center;
+   height: 500px;
+}
+
+#button {
+    height: 40px;
+    width:200px;
+    background-color: brown;
+    color: white;
+    margin: 20px 10px 5px;
+    border: none;
+    border-radius: 7px;
+}
+
+
+#button2 {
+    height: 40px;
+    width:120px;
+    background-color: darkgoldenrod;
+    color: white;
+    margin: 5px;
+    border: none;
+    border-radius: 7px;
+}
+
+.blue {
+    background-color: darkblue;
+}

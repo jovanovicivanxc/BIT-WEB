@@ -1,0 +1,28 @@
+body {
+    background-image: url(field.png);
+    background-size: cover;
+    position: relative;
+    height: 820px;
+}
+
+img {
+    height: 150px;
+    position: relative;
+    left:10px;
+    top:10px;
+}
+
+#stop {
+    position: absolute;
+    right:10px;
+    bottom: 0px;
+}
+
+#button {
+    width: 150px;
+    height: 40px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

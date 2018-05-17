@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <img id="player" src="player.png" alt="player">
+
+    <div id="stop">
+        <button id="button">Stop Moving</button>
+
+    </div>
+
+    <script>
+        document.body.addEventListener("mousemove", function (event) {
+            myFunction(event);
+        });
+        function myFunction(e) {
+            var p = document.querySelector('#player');
+            var x = e.clientX;
+            var y = e.clientY;
+            p.style.left = x + "px";
+            p.style.top = y + "px";
+            // var coor = "Coordinates: (" + x + ", " + y + ")";
+            // document.querySelector("#demo").innerHTML = coor;
+        }
+    </script>
+
+</body>
+
+</html>
