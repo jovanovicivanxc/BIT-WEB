@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div id="sky"></div>
+    <div id="ground">
+    </div>
+    <div id="mario">
+        <img id="static" src="mario.png" alt="mario">
+        <img id="dynamic" src="mario_running.gif" alt="mario" class="hide">
+    </div>
+
+    <script>
+
+        var step = 20;
+        var handle;
+        var ground = document.querySelector("#ground");
+        ground.style.backgroundPositionX = 0 + "px";
+
+
+        function moveGrass() {
+            ground.style.backgroundPositionX = (parseInt(ground.style.backgroundPositionX) - step) + "px";
+            console.log(ground.style.backgroundPositionX);
+        }
+
+        var running = 0;
+        function run() {
+            document.querySelector('#static').classList.toggle("hide");
+            document.querySelector('#dynamic').classList.toggle("hide");
+            handle = setInterval(moveGrass, 50);
+            running = 1;
+        }
+
+        document.onkeydown = function (event) {
+            if (event.keyCode == 39 && running == 0) {
+                run();
+            }
+        }
+
+
+
+        function stop() {
+            document.querySelector('#static').classList.toggle("hide");
+            document.querySelector('#dynamic').classList.toggle("hide");
+            clearInterval(handle);
+            running = 0;
+        }
+
+        document.onkeyup = function (event) {
+            if (event.keyCode == 39) {
+                stop();
+            }
+        }
+    </script>
+</body>
+
+</html>

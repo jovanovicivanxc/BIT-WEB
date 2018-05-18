@@ -18,18 +18,22 @@
     </div>
 
     <script>
-        document.body.addEventListener("mousemove", function (event) {
-            myFunction(event);
-        });
+        document.body.addEventListener("click", myFunction);
         function myFunction(e) {
             var p = document.querySelector('#player');
             var x = e.clientX;
             var y = e.clientY;
-            p.style.left = x + "px";
-            p.style.top = y + "px";
+            p.style.left = x - 50 + "px";
+            p.style.top = y - 50 + "px";
             // var coor = "Coordinates: (" + x + ", " + y + ")";
             // document.querySelector("#demo").innerHTML = coor;
         }
+
+        document.querySelector("#button").addEventListener("click", removeHandler);
+        function removeHandler() {
+            document.body.removeEventListener("click", myFunction);
+        }
+
     </script>
 
 </body>

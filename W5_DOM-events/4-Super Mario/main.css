@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    position: relative;
+    /* background-position-x: 50px; */
+}
+
+#sky {
+    height: 500px;
+    background-color: blue;
+}
+
+#ground {
+    background-image: url(bg.jpg);
+    background-repeat: repeat-x;
+    height: 500px;
+    position:relative
+}
+
+#mario {
+    height: 300px;
+    position: absolute;
+    top: 595px;
+    left:800px;
+}
+
+
+#static {
+    height: 100%;
+    position: absolute;
+    /* display: none; */
+}
+
+#dynamic {
+    height: 100%;
+    position: absolute;
+    left:20px;
+}
+
+.hide {
+    display: none;
+}
