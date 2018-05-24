@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <input id="input" type="text">
+        <input onclick="myFunc()" type="button"></input>
+    </form>
+    <script>
+        function myFunc() {
+            var input = document.querySelector("#input");
+            var request = new XMLHttpRequest();
+            var hostName = 'http://api.ipstack.com/' + input.value + '?format=1&access_key=66f0403b5870e87ee670adb5fa81c3a6'
+            // request.open('GET', '/http://api.ipstack.com/' + input.value + '?format=1&access_key=66f0403b5870e87ee670adb5fa81c3a6', true);
+            request.open('GET', hostName, true);
+            request.onload = function () {
+                if (request.status >= 200 && request.status < 400) {
+                    var data = JSON.parse(request.responseText);
+                    console.log(data)
+                } else {
+                }
+            };
+            request.onerror = function () {
+            };
+            request.send();
+        };
+    </script>
+</body>
+
+</html>
